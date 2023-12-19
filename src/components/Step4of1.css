@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#warning-1 {
+    background-color: #D89D31;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+#middle-container-6 {
+    margin: 0 auto;
+    width: 33%;
+}
+
+#middle-container-6 p {
+    font-family: "NetflixSansLite";
+    color: rgb(79, 79, 79);
+}
+
+#middle-container-6 h1 {
+    font-family: "NetflixSans";
+    color: rgb(79, 79, 79);
+}
+
+#email-value {
+    color: rgb(79, 79, 79);
+    padding: 15px;
+    font-family: 'NetflixSansLite';
+    width: 400px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+#setup-password {
+    color: rgb(79, 79, 79);
+    padding: 15px;
+    font-family: 'NetflixSansLite';
+    width: 400px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px black solid;
+}
+
+#submit-setup-login-form {
+    padding: 17px 193px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'NetflixSans';
+    cursor: pointer;
+}
+
+#submit-setup-login-form:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+#submit-setup-login-form:active {
+    background-color: rgb(120, 20, 46);
+}
+
+#forgot-password-1 {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0071EB;
+    font-family: 'NetflixSans';
+}
+
+#forgot-password-1:hover {
+    text-decoration: underline;
+}

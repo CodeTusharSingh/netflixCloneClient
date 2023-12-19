@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#sign-out-body {
+    background-image: url('https://occ-0-2461-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABe1fA_q1l9tqtFkCK7xxnTUkhV3NHZDpPy7yF-YgiPUDPzGfeMlcRoKXiOfHl2UVx9oINILikJ1NaUYxpOnGKLAv_f49b5p3jyA7.jpg?r=002&quot;');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#sign-out-header {
+    display: flex;
+    justify-content: space-between;
+    width: (100% - 50px);
+    margin: 0 50px;
+    align-items: center;
+    height: 80px;
+}
+
+#sign-out-logo-container {
+    position: relative;
+}
+
+#sign-in {
+    padding: 8px 15px;
+    font-family: "NetflixSansLite";
+    font-weight: 400;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#sign-out-main-div {
+    background-color: white;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 26%;
+    margin: auto;
+}
+
+#sign-out-main-div h1 {
+    font-family: "NetflixSans";
+}
+
+#sign-out-main-div p {
+    font-family: "NetflixSansLite";
+}
+
+#sign-out-main-div button {
+    cursor: pointer;
+    font-family: "NetflixSansLite";
+    color: white;
+    background-color: #2490FD;
+    border-radius: 2px;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+}

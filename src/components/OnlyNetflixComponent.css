@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#content {
+    height: 250px
+}
+
+#content ::-webkit-scrollbar {
+    display: none;
+}
+
+#content-slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    z-Index: 2;
+}
+
+.content-name {
+    padding-right: 10px;
+    text-align: center;
+}
+
+.content-name figcaption {
+    color: white;
+    font-family: "NetflixSansLite";
+    font-size: 16px;
+}
+
+#content-scroll-buttons {
+    position: relative;
+    bottom: 193px;
+    left: 16px;
+    width: 98.8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-name a {
+    text-decoration: none;
+}

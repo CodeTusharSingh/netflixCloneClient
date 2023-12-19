@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#middle-container-3 {
+    margin: 0 auto;
+    width: fit-content;
+    height: 400px;
+}
+
+#middle-container-3 p {
+    font-family: 'NetflixSansLite';
+    color: rgb(79, 79, 79);
+}
+
+#middle-container-3 h1 {
+    font-family: 'NetflixSans';
+    color: rgb(79, 79, 79);
+}
+
+#user-email {
+    text-align: center;
+    color: black;
+    font-family: "NetflixSans";
+    font-size: large;
+}
+
+#middle-container-3 a {
+    font-family: "NetflixSans";
+    color: white;
+    font-size: 22px;
+    padding: 17px 150px;
+    background-color: rgb(220, 9, 20);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#middle-container-3 a:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+#middle-container-3 a:active {
+    background-color: rgb(120, 20, 46);
+}

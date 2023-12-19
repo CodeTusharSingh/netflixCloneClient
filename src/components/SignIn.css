@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#signInBkg {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 1)), url("netflixBkgSignIn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label::selection {
+    color: transparent;
+    background-color: transparent;
+}
+
+#signInNetflixLogo {
+    height: 170px;
+    width: 170px;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+
+#middle-container-7 {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 4px;
+    user-select: none;
+}
+
+#middle-container-7 h1 {
+    font-family: 'NetflixSansLite';
+    color: white;
+}
+
+#signInFormEmail {
+    background-color: rgb(51, 51, 51);
+    padding-left: 10px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 300px;
+    height: 45px;
+    font-family: 'NetflixSansLite';
+}
+
+#signInFormPass {
+    background-color: rgb(51, 51, 51);
+    padding-left: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 300px;
+    height: 45px;
+    font-family: 'NetflixSansLite';
+}
+
+#signInFormSubmit {
+    color: white;
+    background-color: rgb(229, 9, 20);
+    font-family: "NetflixSans";
+    font-size: 18px;
+    padding: 15px 127px;
+    border: none;
+    border-radius: 4px;
+}
+
+#signInFormSubmit:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+#signInFormSubmit:active {
+    background-color: rgb(120, 20, 46);
+}
+
+#signInFooter {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#signInFooter p {
+    font-family: "NetflixSansLite";
+    font-size: 16px;
+    color: rgb(136, 135, 135);
+    margin-left: 100px;
+}
+
+#signInFooter a {
+    font-family: "NetflixSansLite";
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(136, 135, 135);
+    margin-left: 100px;
+}
+
+#signInFooter a:hover {
+    text-decoration: underline;
+}
+
+#signInFooter ul {
+    list-style-type: none;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 230px);
+    position: relative;
+    right: 40px;
+}
+
+#signInlang-selector {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(136, 135, 135);
+    padding: 0 40px;
+    font-family: "NetflixSansLite";
+    border-radius: 2px;
+    font-size: 15px;
+    margin-left: 80px;
+    appearance: none;
+}
+
+#signInArrow {
+    position: relative;
+    right: 25px;
+    top: 2px
+}
+
+#signInGlobe {
+    position: relative;
+    left: 110px;
+    top: 5px;
+}

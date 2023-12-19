@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#error-page-body {
+    background-image: url('https://occ-0-2461-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWU7mw-685wea-SAS3lj5qYbp_VjOAwj902cqegwdwvQU-R-QtwraXuowsQbv2CjO82yTr4SaW1SrtADS5RAPheKdjW1NJK0vf-G.jpg?r=dab&quot;');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-page-message {
+    text-align: center;
+}
+
+#error-page-message h1 {
+    color: white;
+    font-family: 'NetflixSans';
+    font-size: 50px;
+}
+
+#error-page-message p {
+    color: white;
+    font-family: 'NetflixSansLite';
+    font-size: 20px;
+}
+
+#error-page-message a {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'NetflixSans';
+    padding: 15px 50px;
+    border-radius: 4px;
+}

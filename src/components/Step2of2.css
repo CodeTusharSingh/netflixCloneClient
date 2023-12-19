@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#middle-container-4 {
+    margin: 0 auto;
+    width: 980px;
+}
+
+#middle-container-4 p {
+    font-family: "NetflixSansLite";
+    color: rgb(79, 79, 79);
+}
+
+#middle-container-4 h1 {
+    font-family: "NetflixSans";
+    color: rgb(79, 79, 79);
+}
+
+#containerplan {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: right;
+}
+
+/* #mobile {
+    background-color: rgb(241, 92, 100);
+    border-radius: 1px;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-family: "NetflixSans";
+    position: relative;
+    right: 150px;
+} */
+
+/* #mobsq {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    transform: rotate(45deg);
+    background-color: rgb(229, 9, 20);
+    display: none;
+} */
+
+/* #basic {
+    background-color: rgb(229, 9, 20);
+    box-shadow: 0 0 4px red;
+    border-radius: 1px;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-family: "NetflixSans";
+    position: relative;
+    right: 100px;
+} */
+
+/* #basq {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    transform: rotate(45deg);
+    background-color: rgb(229, 9, 20);
+} */
+
+/* #standard {
+    background-color: rgb(241, 92, 100);
+    border-radius: 1px;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-family: "NetflixSans";
+    position: relative;
+    right: 50px;
+} */
+
+/* #stdsq {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    transform: rotate(45deg);
+    background-color: rgb(229, 9, 20);
+    display: none;
+} */
+
+/* #premium {
+    background-color: rgb(241, 92, 100);
+    border-radius: 1px;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-family: "NetflixSans";
+    position: relative;
+} */
+
+/* #presq {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    transform: rotate(45deg);
+    background-color: rgb(229, 9, 20);
+    display: none;
+} */
+
+#mobile p {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+    font-family: "NetflixSans";
+    color: white;
+}
+
+#basic p {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+    font-family: "NetflixSans";
+    color: white;
+}
+
+#standard p {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+    font-family: "NetflixSans";
+    color: white;
+}
+
+#premium p {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+    font-family: "NetflixSans";
+    color: white;
+}
+
+#plandetails {
+    font-family: "NetflixSansLite";
+    border-collapse: collapse;
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+#next-4 {
+    font-family: "NetflixSans";
+    background-color: rgb(229, 9, 20);
+    font-size: 22px;
+    padding: 17px 200px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#next-4:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+#next-4:active {
+    background-color: rgb(120, 20, 46);
+}
