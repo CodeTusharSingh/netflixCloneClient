@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#home-content {
+    height: 200px;
+}
+
+#home-content ::-webkit-scrollbar {
+    display: none;
+}
+
+#home-content-slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+
+.home-content-container {
+    display: flex;
+    flex-direction: row;
+    z-Index: 2;
+
+}
+
+.home-content-name {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#home-content-scroll-bottons {
+    position: relative;
+    bottom: 173px;
+    left: 16px;
+    width: 98.8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-content-name a {
+    text-decoration: none;
+}
+
+.home-content-name video {
+    height: 168px;
+    width: 299px;
+    position: relative;
+    top: 15px;
+    display: none;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    box-shadow: '0px 0px 20px rgb(0,0,0)'
+}
+
+#insider-video-div-components-volume-control-button {
+    display: none;
+    height: 40px;
+    border: 1px solid #a1a1a1;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#insider-video-div-components-volume-control-button:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#insider-video-div-components-volume-control-button:active {
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#insider-div-components {
+    z-index: 100;
+    cursor: pointer;
+}
+
+#home-content-video-player {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+#home-content-video-player video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#home-content-video-title {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+}

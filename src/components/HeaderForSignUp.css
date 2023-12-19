@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#header-body {
+    background-color: rgb(255, 255, 255);
+}
+
+#header-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    height: 80px;
+    overflow-y: hidden;
+}
+
+#logo-1 {
+    height: 170px;
+    width: 170px;
+}
+
+#logo-container-1 {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    height: fit-content;
+}
+
+#sign-container-1 {
+    position: relative;
+    right: 50px;
+    top: 30px;
+    height: fit-content;
+}
+
+#sign-title {
+    font-family: "NetflixSans";
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#sign-title:hover {
+    text-decoration: underline;
+}
+
+#end-part-1 {
+    background-color: rgb(243, 243, 243);
+}
+
+#end-part-1 p {
+    font-family: "NetflixSansLite";
+    font-size: 16px;
+    color: rgb(136, 135, 135);
+    margin-left: 50px;
+}
+
+#end-part-1 a {
+    font-family: "NetflixSansLite";
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(136, 135, 135);
+    margin-left: 50px;
+}
+
+#end-part-1 a:hover {
+    text-decoration: underline;
+}
+
+#end-part-1 ul {
+    list-style-type: none;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 250px);
+    position: relative;
+    right: 40px;
+}
+
+#lang-selector-1 {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: rgb(136, 135, 135);
+    padding: 0 40px;
+    font-family: "NetflixSansLite";
+    border-radius: 2px;
+    font-size: 15px;
+    margin-left: 30px;
+    appearance: none;
+}
+
+#arrow {
+    position: relative;
+    right: 25px;
+    top: 2px
+}
+
+#globe {
+    position: relative;
+    left: 60px;
+    top: 5px;
+}

@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#money-heist-info {
+    background-image: linear-gradient(to right, rgb(24, 24, 24, 1), rgb(24, 24, 24, 1), rgb(24, 24, 24, 0), rgb(24, 24, 24, 0)), url("https://occ-0-2461-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaJJIdyKMNvEcWhAtI5Xk12MQLY8DLxAkM2k8unVHyRordNL9Jn726cLoEmP_DAn44vwE3_l9dWTpDQTvmzsk6REyj4veXm9bvQ8.jpg?r=e19&quot;");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+}
+
+#money-heist-info-container {
+    width: 37%;
+    padding-left: 70px;
+    padding-top: 90px;
+}
+
+#money-heist-info-container h2 {
+    font-family: NetflixSansLite;
+    color: white;
+    font-size: 24px;
+}
+
+#genre a {
+    color: #a1a1a1;
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    font-Family: NetflixSansLite;
+    text-Decoration: none;
+}
+
+#genre a:hover {
+    text-Decoration: underline;
+}
+
+#join-now-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgb(46, 46, 46, 1), rgb(38, 38, 38, 1), rgb(26, 26, 26, 1));
+    width: (100% - 50px);
+    margin: 0 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+}
+
+#join-now-tab-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 50px;
+}
+
+#join-now-tab-logo {
+    height: 100px;
+    width: 100px;
+}
+
+#join-now-tab-link {
+    padding: 8px 15px;
+    font-family: "NetflixSansLite";
+    font-size: 13px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none;
+    position: relative;
+    right: 8px;
+}
+
+#join-now-tab-link:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+#join-now-tab-link:active {
+    background-color: rgb(120, 20, 46);
+    border-color: rgb(120, 20, 46);
+}
+
+#content-achievement-tab {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: (100% - 50px);
+    margin: 0 50px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #a1a1a1, rgb(46, 46, 46, 1), #a1a1a1);
+    border-image-slice: 1;
+}
+
+#content-achievement-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#trailer {
+    height: 450px;
+}
+
+#video-heading {
+    width: 300px;
+    margin-left: 50px;
+}
+
+#video-heading h1 {
+    font-family: NetflixSansLite;
+    color: white;
+}
+
+#trailer a {
+    text-decoration: none;
+}
+
+#trailer figcaption {
+    color: white;
+    font-size: 16px;
+    font-family: NetflixSansLite;
+}
+
+#trailer ::-webkit-scrollbar {
+    display: none;
+}
+
+#trailer-slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+.trailer-name {
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#trailer-scroll-buttons {
+    position: relative;
+    bottom: 330px;
+    left: 17px;
+    width: 98.8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#trailer-play-button-svg {
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    cursor: pointer;
+}
+
+#trailer-video-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

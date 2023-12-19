@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#home-movie-info-div {
+    background-color: #181818;
+    border-radius: 4px;
+    width: 900px;
+    height: fit-content;
+}
+
+#home-movie-info-video {
+    position: relative;
+    border-radius: 4px;
+    height: 520px;
+}
+
+
+#home-movie-info-video video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+
+#home-movie-info-video img {
+    height: 100px;
+    width: 400px;
+}
+
+#home-movie-info-volume-control-buttons {
+    height: 42px;
+    border: 1px solid #a1a1a1;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#home-movie-info-video-components {
+    position: relative;
+    top: 300px;
+    width: 90%;
+    left: 30px;
+}
+
+#home-movie-info {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    left: 40px;
+}
+
+#home-movie-episodes {
+    position: relative;
+    left: 40px;
+    width: 90%;
+}
+
+#close-home-movie {
+    position: relative;
+    top: 25px;
+    float: right;
+    right: 25px;
+    cursor: pointer;
+}
+
+#home-movie-trailer {
+    position: relative;
+    left: 40px;
+    width: 90%;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+#home-movie-about {
+    position: relative;
+    left: 40px;
+    width: 90%;
+}
+
+
+#home-movie-video-player {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#home-movie-video-player video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#home-movie-video-title {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+}

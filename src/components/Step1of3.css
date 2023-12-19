@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NetflixSansLite';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+#middle-container-5 {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+#middle-container-5 p {
+    color: rgb(79, 79, 79);
+    font-family: 'NetflixSansLite';
+}
+
+#middle-container-5 h1 {
+    color: rgb(79, 79, 79);
+    font-family: 'NetflixSans';
+}
+
+#middle-container-5 h3 {
+    color: rgb(79, 79, 79);
+    font-family: 'NetflixSans';
+}
+
+#payment-options p {
+    font-size: small;
+}
+
+#payment-options img {
+    position: relative;
+    top: 15px;
+    left: 15px
+}
+
+#option-1 {
+    border: 2px solid rgb(34, 31, 31, 0.5);
+    border-radius: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 55px;
+}
+
+#option-1:hover {
+    background-color: #a1a1a1;
+}
+
+#option-1:active {
+    background-color: white;
+}
+
+#option-1 p {
+    font-family: 'NetflixSans';
+    font-size: 20px;
+}
+
+#card-option {
+    display: flex;
+    flex-direction: row;
+}
+
+#card-option p {
+    font-family: 'NetflixSansLite';
+    font-size: 16px;
+}
+
+
+#option-2 {
+    border: 2px solid rgb(34, 31, 31, 0.5);
+    border-radius: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 55px;
+}
+
+#option-2:hover {
+    background-color: #a1a1a1;
+}
+
+#option-2:active {
+    background-color: white;
+}
+
+#option-2 p {
+    font-family: 'NetflixSans';
+    font-size: 20px;
+}
+
+#upi-option {
+    display: flex;
+    flex-direction: row;
+}
+
+#upi-option p {
+    font-family: 'NetflixSansLite';
+    font-size: 16px;
+}
