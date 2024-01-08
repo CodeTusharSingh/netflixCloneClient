@@ -587,7 +587,7 @@ function Home() {
             {navbar === 'home' &&
                 <div style={{ position: 'relative', bottom: '122px' }}>
                     <div id='home-background'>
-                        <video ref={videoRef} src={'https://github.com/PratikGangle/Netflix-video/raw/main/one_piece.mp4'} autoPlay muted>
+                        <video ref={videoRef} src={'https://github.com/PratikGangle/netflix-video/blob/main/sample-video-4.mp4'} autoPlay muted>
                         </video>
 
 
