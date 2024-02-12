@@ -704,7 +704,15 @@ function Main() {
                 <svg height={"10px"} width={"10px"} style={{ position: 'relative', right: '20px', top: '2px' }}>
                     <polygon points="0,0 5,8 10,0" fill="white" strokeWidth="1" stroke="white"></polygon>
                 </svg>
-                <p>Netflix India</p>
+                <p>Netflix Clone</p>
+                <p>
+Copyright Disclaimer:
+This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
+The use of Netflix's copyrighted materials on this website is for informational and educational purposes only, and their inclusion here does not imply endorsement by Netflix.
+We make no claim of ownership to any content, images, or trademarks owned by Netflix. All rights to Netflix's content belong to Netflix, Inc. and its affiliates.
+For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
+This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
+</p>
             </footer>
             <br></br>
             <br></br>
