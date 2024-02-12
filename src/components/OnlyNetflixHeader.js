@@ -100,7 +100,7 @@ function OnlyNetflixHeader(props) {
                 <svg height={"10px"} width={"10px"} style={{ position: 'relative', right: '20px', top: '2px' }}>
                     <polygon points="0,0 5,8 10,0" fill="white" strokeWidth="1" stroke="white"></polygon>
                 </svg>
-                <p>Netflix India</p>
+                <p>Netflix Clone</p>
                 <p>
             Copyright Disclaimer:
 
