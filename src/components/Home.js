@@ -796,7 +796,7 @@ function Home() {
                     <polygon points="0,0 5,8 10,0" fill="white" strokeWidth="1" stroke="white"></polygon>
                 </svg>
                 <p>Netflix Clone</p>
-                Copyright Disclaimer:
+               <p> Copyright Disclaimer:
 
 This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
 
@@ -807,7 +807,7 @@ We make no claim of ownership to any content, images, or trademarks owned by Net
 For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
 
 This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
-
+</p>
                 <br></br>
                 <br></br>
             </footer >
