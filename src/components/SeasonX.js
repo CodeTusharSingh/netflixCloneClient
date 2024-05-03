@@ -14,7 +14,7 @@ function SeasonX() {
 
     useEffect(() => {
         Promise.all([
-            axios.get(`https://seriesapi-production.up.railway.app/seriesAPI/${linkexpo}`),
+            axios.get(`https://seriesapi-p9w3.onrender.com/seriesAPI/${linkexpo}`),
         ])
             .then(([seriesResponse]) => {
                 setSeries(seriesResponse.data);
