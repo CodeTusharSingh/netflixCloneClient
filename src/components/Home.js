@@ -126,7 +126,7 @@ function Home() {
         if (contentLink !== null) {
             if (contentType === 'movies') {
                 Promise.all([
-                    axios.get(`https://moviesapi-production-7860.up.railway.app/moviesAPI/${contentLink}`)
+                    axios.get(`https://moviesapi-lz20.onrender.com/moviesAPI/${contentLink}`)
                 ])
                     .then(([moviesResponse]) => {
                         if (moviesResponse.data && moviesResponse.data[0] !== null && moviesResponse.data[0] !== undefined) {
@@ -148,7 +148,7 @@ function Home() {
             }
             else if (contentType === 'series') {
                 Promise.all([
-                    axios.get(`https://seriesapi-production.up.railway.app/seriesAPI/${contentLink}`)
+                    axios.get(`https://seriesapi-p9w3.onrender.com/seriesAPI/${contentLink}`)
                 ])
                     .then(([seriesResponse]) => {
                         if (seriesResponse.data && seriesResponse.data[0] !== null && seriesResponse.data[0] !== undefined) {
