@@ -140,8 +140,8 @@ function Main() {
 
     const [descriptionstyle1, setDescriptionStyle1] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '200px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -188,8 +188,8 @@ function Main() {
     }
     const [descriptionstyle2, setDescriptionStyle2] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '70px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -238,8 +238,8 @@ function Main() {
     }
     const [descriptionstyle3, setDescriptionStyle3] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '250px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -288,8 +288,8 @@ function Main() {
     }
     const [descriptionstyle4, setDescriptionStyle4] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '100px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -339,8 +339,8 @@ function Main() {
 
     const [descriptionstyle5, setDescriptionStyle5] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '80px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -390,8 +390,8 @@ function Main() {
 
     const [descriptionstyle6, setDescriptionStyle6] = useState({
         backgroundColor: 'rgb(56, 54, 54)',
-        height: '130px',
-        width: '1000px',
+        height: '100%',
+        width: '100%',
         margin: '0 auto',
         fontSize: 'x-large',
         border: '2px solid rgb(0, 0, 0)',
@@ -492,7 +492,6 @@ function Main() {
                                     <input type="email" id="email" name="email" placeholder="Email address"
                                         value={email}
                                         onChange={handleEmailChange} style={{ borderColor: isValidEmail ? '' : 'rgb(229,9,20)' }} />
-
                                     <input type="submit" id="start" value="Get Started   >" onClick={handleSubmit}></input>
                                 </form>
                             </div>
@@ -684,7 +683,7 @@ function Main() {
                     <li><a href="/">Legal Notices</a></li>
                     <li><Link to="/onlyonnetflix/content">Only on Netflix</Link></li>
                 </ul>
-                <svg height={"20px"} width={"20px"} style={{ position: 'relative', left: '205px', top: '32px' }}>
+                <svg id='main-globe-svg' height={"20px"} width={"20px"}>
                     <circle cx="10" cy="10" r="8" fill="none" strokeWidth="1" stroke="white"></circle>
                     <ellipse cx="10" cy="10" rx="4" ry="8" fill="none" strokeWidth="1" stroke="white"></ellipse>
                     <line x1="10" y1="2" x2="10" y2="18" stroke="white" strokeWidth="1"></line>
@@ -701,18 +700,18 @@ function Main() {
                     <option id="esp">Spanish</option>
                     <option id="rus">Russian</option>
                 </select>
-                <svg height={"10px"} width={"10px"} style={{ position: 'relative', right: '20px', top: '2px' }}>
+                <svg id='main-drop-down-svg' height={"10px"} width={"10px"} >
                     <polygon points="0,0 5,8 10,0" fill="white" strokeWidth="1" stroke="white"></polygon>
                 </svg>
                 <p>Netflix Clone</p>
                 <p>
-Copyright Disclaimer:
-This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
-The use of Netflix's copyrighted materials on this website is for informational and educational purposes only, and their inclusion here does not imply endorsement by Netflix.
-We make no claim of ownership to any content, images, or trademarks owned by Netflix. All rights to Netflix's content belong to Netflix, Inc. and its affiliates.
-For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
-This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
-</p>
+                    Copyright Disclaimer:
+                    This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
+                    The use of Netflix's copyrighted materials on this website is for informational and educational purposes only, and their inclusion here does not imply endorsement by Netflix.
+                    We make no claim of ownership to any content, images, or trademarks owned by Netflix. All rights to Netflix's content belong to Netflix, Inc. and its affiliates.
+                    For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
+                    This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
+                </p>
             </footer>
             <br></br>
             <br></br>
@@ -721,4 +720,4 @@ This website and its creators are not affiliated with, endorsed by, or sponsored
     );
 }
 
-export default Main
+export default Main;
