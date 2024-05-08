@@ -314,6 +314,12 @@ hr {
 
 #faq {
     color: white;
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 100px;
     text-align: center;
 }
@@ -332,7 +338,7 @@ hr {
 #dq1 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -355,7 +361,7 @@ hr {
 #dq2 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -375,19 +381,16 @@ hr {
 }
 
 
-
 #q3 {
     position: relative;
     left: 20px
 }
 
 
-
 #q4 {
     position: relative;
     left: 20px
 }
-
 
 
 #q5 {
@@ -407,7 +410,7 @@ hr {
 #dq3 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -425,7 +428,7 @@ hr {
 #dq4 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -440,11 +443,10 @@ hr {
 }
 
 
-
 #dq5 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -463,7 +465,7 @@ hr {
 #dq6 {
     background-color: rgb(56, 54, 54);
     height: 70px;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     font-size: x-large;
     display: flex;
@@ -474,6 +476,11 @@ hr {
 #dq6:hover {
     background-color: rgb(117, 111, 111, 0.8);
     cursor: pointer;
+}
+
+#end-part {
+    display: flex;
+    flex-direction: column;
 }
 
 #end-part a {
@@ -498,10 +505,18 @@ hr {
 
 #end-part ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 160px;
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-gap: 20px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 350px); */
+    /* grid-gap: 20px; */
+}
+
+#end-part ul li {
+    width: 200px;
 }
 
 #end-part #lang-selector {
@@ -527,44 +542,388 @@ hr {
     background-color: rgb(120, 20, 46);
 }
 
+#main-globe-svg {
+    position: relative;
+    left: 210px;
+    top: 47.5px;
+}
 
-/* @media (max-width: 428px) {
+#main-drop-down-svg {
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+}
+
+
+@media only screen and (max-width: 775px) {
     #header {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     #logo-container {
-        left: 0;
-        text-align: center;
-        margin-bottom: 20px;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
     }
 
     #logo {
-       
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     #sign-translate {
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        top: 10px;
+        height: fit-content;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
     }
 
-    #lang-selector {
-        
+    #midSection {
+        text-align: center;
+        height: fit-content;
+        color: white;
+    }
+
+    #midSection h1 {
+        font-family: "NetflixSans";
+        font-size: 35px;
+    }
+
+    #p1 {
+        font-family: "NetflixSansLite";
+        font-size: 22px;
+    }
+
+    #p2 {
+        font-family: "NetflixSansLite";
+        font-size: 20px;
+    }
+
+    #emailStart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-top: 10px;
-        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    #email {
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgba(24, 23, 23, 0.5);
+        border-style: solid;
+        font-family: "NetflixSansLite";
+        font-size: large;
+        color: white;
+        padding: 0px 10px;
+        padding-right: 50px;
+        border-color: rgba(65, 62, 62, 0.8);
     }
 
     #start {
-        
-        padding: 10px 15px;
-        font-size: normal;
+        padding: 14px 20px;
+        background-color: rgb(229, 9, 20);
+        border: none;
+        border-left: 10px solid white;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        font-family: "NetflixSansLite";
+        font-weight: bold;
+        cursor: pointer;
     }
 
-    
-} */
+    #second {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+    }
+
+    #second-div-1 {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        top: 0px;
+    }
+
+    #second-div-1 h1 {
+        font-family: "NetflixSans";
+        font-weight: 1000;
+        font-size: 30px;
+    }
+
+    #second-div-1 p {
+        font-family: "NetflixSansLite";
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #second-div-img-container {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    #second-div-img-container img {
+        height: 100px;
+        width: 150px;
+    }
+
+    #third {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+    }
+
+    #third-div-1 {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        top: 0px
+    }
+
+    #third-div-1 h1 {
+        font-family: "NetflixSans";
+        font-weight: 1000;
+        font-size: 30px;
+    }
+
+    #third-div-1 p {
+        font-family: "NetflixSansLite";
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #third-div-img-container {
+        position: relative;
+        left: 0px;
+        top: 0px
+    }
+
+    #third-div-img-container img {
+        height: 100px;
+        width: 150px;
+    }
+
+
+    #fourth {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+    }
+
+    #fourth-div-1 {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        top: 0px
+    }
+
+    #fourth-div-1 h1 {
+        font-family: "NetflixSans";
+        font-weight: 1000;
+        font-size: 30px;
+    }
+
+    #fourth-div-1 p {
+        font-family: "NetflixSansLite";
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #fourth-div-img-container {
+        position: relative;
+        left: 0px;
+        top: 0px
+    }
+
+    #fourth-div-img-container img {
+        height: 100px;
+        width: 150px;
+    }
+
+    #fifth {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+    }
+
+    #fifth-div-1 {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        top: 0px
+    }
+
+    #fifth-div-1 h1 {
+        font-family: "NetflixSans";
+        font-weight: 1000;
+        font-size: 30px;
+    }
+
+    #fifth-div-1 p {
+        font-family: "NetflixSansLite";
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #fifth-div-img-container {
+        position: relative;
+        left: 0px;
+        top: 0px
+    }
+
+    #fifth-div-img-container img {
+        height: 100px;
+        width: 150px;
+    }
+
+    #faq {
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #faq h1 {
+        font-family: "NetflixSans";
+        font-weight: 1000;
+        font-size: 30px;
+    }
+
+    #faq p {
+        font-family: "NetflixSansLite";
+        font-size: 20px;
+    }
+
+    #dq1 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #dq2 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #dq3 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #dq4 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #dq5 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #dq6 {
+        background-color: rgb(56, 54, 54);
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black
+    }
+
+    #end-part p {
+        margin-left: 50px;
+        color: rgb(179, 179, 179);
+        font-family: "NetflixSans";
+    }
+
+    #end-part ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        /* display: grid; */
+        /* grid-template-columns: repeat(3, 350px); */
+        /* grid-gap: 20px; */
+    }
+
+    #end-part #lang-selector {
+        margin-left: 50px;
+    }
+
+    #main-globe-svg {
+        position: relative;
+        left: 60px;
+        top: 47.5px;
+    }
+
+    #main-drop-down-svg {
+        position: relative;
+        left: 150px;
+        bottom: 20px;
+    }
+
+}
