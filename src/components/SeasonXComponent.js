@@ -119,6 +119,7 @@ const SeasonXComponent = ({ series, seasons, moreDetails }) => {
                     <p id='starring-creator' style={{ color: '#a1a1a1', fontSize: '16px', fontFamily: 'NetflixSansLite' }}> Starring: <span id='starring' style={{ color: 'white', fontSize: '16px', fontFamily: 'NetflixSansLite' }}>{seriesArray.starring}</span><br></br>
                         Creators: <span id='creator' style={{ color: 'white', fontSize: '16px', fontFamily: 'NetflixSansLite' }}>{seriesArray.creators}</span></p>
                 </div>
+
             </div>
             {show && <>
                 <div id='join-now-tab'>
@@ -163,7 +164,7 @@ const SeasonXComponent = ({ series, seasons, moreDetails }) => {
                     <p style={pStyle} >{seriesArray.titleName}</p>
                     {selectedPart && selectedSeason && (
                         <div>
-                            <div style={{ width: '45%' }}>
+                            <div id='season-x-episode-season-description'>
                                 <h4 style={{ color: 'white', fontFamily: 'NetflixSansLite' }}>Release Year: {selectedSeason[selectedPart][0].releaseYear}</h4>
                                 <p style={{ fontFamily: 'NetflixSansLite', color: '#a3a3a3', fontSize: '16px' }}>{selectedSeason[selectedPart][0].seasonDescription}</p>
                             </div>
@@ -171,15 +172,15 @@ const SeasonXComponent = ({ series, seasons, moreDetails }) => {
                                 {selectedSeason[selectedPart][0].episodes.map((episode, index) => (
                                     <div key={index} style={{ paddingRight: '12px', paddingTop: '10px' }}>
                                         <div>
-                                            <img src={episode} alt={`Episode ${index + 1}`} height={'223px'} width={'396px'} />
+                                            <img id='season-x-episode-img' src={episode} alt={`Episode ${index + 1}`} height={'223px'} width={'396px'} />
                                         </div>
-                                        <div width='396px'>
-                                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '396px' }}>
+                                        <div>
+                                            <div id='season-x-episode-info' >
                                                 <p style={{ color: 'white', fontFamily: 'NetflixSans' }}>{index + 1}. {selectedSeason[selectedPart][0].episodeName[index]}</p>
                                                 <p style={{ color: '#a3a3a3', fontFamily: 'NetflixSansLite' }}>{selectedSeason[selectedPart][0].episodeRuntime[index]}</p>
                                             </div>
-                                            <div width='396px'>
-                                                <p style={{ color: '#a3a3a3', fontFamily: 'NetflixSansLite', width: '396px', fontSize: '12px' }}>{selectedSeason[selectedPart][0].episodeDescription[index]}</p>
+                                            <div id='season-x-episode-description' >
+                                                <p style={{ color: '#a3a3a3', fontFamily: 'NetflixSansLite', fontSize: '12px' }}>{selectedSeason[selectedPart][0].episodeDescription[index]}</p>
                                             </div>
                                         </div>
                                     </div>
