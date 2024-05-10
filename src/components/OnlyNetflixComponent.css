@@ -56,3 +56,27 @@
 .content-name a {
     text-decoration: none;
 }
+
+@media only screen and (min-width: 501px) and (max-width:900px) {
+    #content-scroll-buttons {
+        position: relative;
+        bottom: 194px;
+        left: 16px;
+        width: 98.8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #content-scroll-buttons {
+        position: relative;
+        bottom: 194px;
+        left: 16px;
+        width: 98.8%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
