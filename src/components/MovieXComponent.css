@@ -116,3 +116,74 @@
     font-family: NetflixSansLite;
     color: white;
 }
+
+@media only screen and (max-width: 775px) {
+    #movies-info {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+
+    #info-container {
+        width: fit-content;
+        padding-left: 70px;
+        padding-top: 90px;
+    }
+
+    #info-container img {
+        height: 50px;
+        width: 200px;
+    }
+
+    #join-now-tab-logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100px;
+        height: 50px;
+    }
+
+    #join-now-tab-logo-container p {
+        display: none;
+    }
+
+    #join-now-tab-link {
+        padding: 8px 15px;
+        font-family: "NetflixSansLite";
+        font-size: 13px;
+        background-color: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+        border-radius: 2px;
+        text-decoration: none;
+        position: relative;
+        right: 0px;
+    }
+
+
+    #movies-description-tab {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: (100% - 50px);
+        margin: 0 50px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, #a1a1a1, rgb(46, 46, 46, 1), #a1a1a1);
+        border-image-slice: 1;
+    }
+
+    #movies-description-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #video-heading {
+        width: fit-content;
+        margin-left: 50px;
+    }
+
+}
