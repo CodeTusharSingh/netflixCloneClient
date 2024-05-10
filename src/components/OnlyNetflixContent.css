@@ -11,7 +11,7 @@
 
 #only-netflix-description {
     padding: 0px 50px;
-    width: 600px;
+    width: 60%;
 }
 
 #only-netflix-description h1 {
@@ -54,4 +54,23 @@
     font-family: NetflixSansLite;
     color: white;
     margin-left: 50px;
+}
+
+@media only screen and (max-width: 775px) {
+    #only-netflix-description {
+        padding: 0px 50px;
+        width: fit-content;
+    }
+
+    #only-netflix-description h1 {
+        font-family: NetflixSans;
+        color: white;
+        font-size: 40px;
+    }
+
+    #only-netflix-description p {
+        font-family: NetflixSansLite;
+        color: white;
+        font-size: 15px;
+    }
 }
