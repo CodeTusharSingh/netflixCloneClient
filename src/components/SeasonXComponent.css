@@ -116,3 +116,76 @@
     font-family: NetflixSansLite;
     color: white;
 }
+
+#season-x-episode-season-description {
+    width: 45%;
+}
+
+#season-x-episode-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 396px;
+}
+
+#season-x-episode-description {
+    width: 396px;
+}
+
+
+@media only screen and (max-width: 775px) {
+    #series-info {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+
+    #info-container img {
+        height: 50px;
+        width: 200px;
+    }
+
+    #series-description-tab {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: (100% - 50px);
+        margin: 0 50px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, #a1a1a1, rgb(46, 46, 46, 1), #a1a1a1);
+        border-image-slice: 1;
+    }
+
+    #series-description-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #episode #video-heading {
+        width: fit-content;
+    }
+
+    #season-x-episode-season-description {
+        width: fit-content;
+    }
+
+    #season-x-episode-img {
+        width: 100%;
+        height: 50%;
+    }
+
+    #season-x-episode-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #season-x-episode-description {
+        width: 100%;
+    }
+}
