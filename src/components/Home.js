@@ -565,7 +565,7 @@ function Home() {
                     <p ref={navbarMyListRef} onClick={() => handleNavbar('mylist')}>My List</p>
                     <p ref={navbarHistoryRef} onClick={() => handleNavbar('history')}>History</p>
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: '20%', backgroundColor: 'black', border: '1px solid white', borderRadius: '4px', padding: '1px' }}>
+                <div id='home-header-search-comp' >
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
                         <path stroke='white' fill='white' d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
                     </svg>
@@ -578,7 +578,18 @@ function Home() {
                     />
                 </div>
                 <div id='home-header-account-icon'>
-
+                    <div id='home-header-search-mobile'>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                            <path stroke='white' fill='white' d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                        </svg>
+                        <input
+                            type="text"
+                            placeholder="Search Titles..."
+                            value={searchTerm}
+                            style={{ width: '100%', fontSize: '16px', backgroundColor: 'black', color: 'white', fontFamily: 'NetflixSansLite', padding: '10px', border: 'none' }}
+                            onChange={(e) => { setSearchTerm(e.target.value); setNavbar('search') }}
+                        />
+                    </div>
                     <img ref={navbarAccountRef} onClick={() => handleNavbar('account')} src='https://occ-0-4344-2186.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229' alt='Your Account' title='Your Account'></img>
                     <Link to="/signout" id="sign">Sign Out</Link>
 
@@ -602,7 +613,7 @@ function Home() {
                                     </section>
                                 </div>
                             </div>
-                            <div id='home-main-content-controls' style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '90%', flexWrap: 'wrap', alignItems: 'center', marginLeft: '50px' }}>
+                            <div id='home-main-content-controls' >
 
                                 <div id='home-main-content-controls-play' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', width: '270px' }}>
                                     <div onClick={playContent} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'row', alignItems: 'center', border: 'none', height: '50px', borderRadius: '4px', padding: '0px 25px', backgroundColor: 'white' }}>
@@ -775,7 +786,7 @@ function Home() {
                     <li><a href="/">Legal Notices</a></li>
                     <li><Link to="/onlyonnetflix/content">Only on Netflix</Link></li>
                 </ul>
-                <svg height={"20px"} width={"20px"} style={{ position: 'relative', left: '105px', top: '32px' }}>
+                <svg id='only-netflix-globe-svg' height={"20px"} width={"20px"} >
                     <circle cx="10" cy="10" r="8" fill="none" strokeWidth="1" stroke="white"></circle>
                     <ellipse cx="10" cy="10" rx="4" ry="8" fill="none" strokeWidth="1" stroke="white"></ellipse>
                     <line x1="10" y1="2" x2="10" y2="18" stroke="white" strokeWidth="1"></line>
@@ -792,25 +803,21 @@ function Home() {
                     <option id="esp">Spanish</option>
                     <option id="rus">Russian</option>
                 </select>
-                <svg height={"10px"} width={"10px"} style={{ position: 'relative', right: '20px', top: '2px' }}>
+                <svg id='only-netflix-drop-down-svg' height={"10px"} width={"10px"}>
                     <polygon points="0,0 5,8 10,0" fill="white" strokeWidth="1" stroke="white"></polygon>
                 </svg>
                 <p>Netflix Clone</p>
-               <p> Copyright Disclaimer:
-
-This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
-
-The use of Netflix's copyrighted materials on this website is for informational and educational purposes only, and their inclusion here does not imply endorsement by Netflix.
-
-We make no claim of ownership to any content, images, or trademarks owned by Netflix. All rights to Netflix's content belong to Netflix, Inc. and its affiliates.
-
-For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
-
-This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
-</p>
+                <p>
+                    Copyright Disclaimer:
+                    This website is a clone of Netflix and is intended for educational and demonstration purposes only. All images, logos, and trademarks used on this website that are associated with Netflix original content are the property of Netflix, Inc. and its affiliates.
+                    The use of Netflix's copyrighted materials on this website is for informational and educational purposes only, and their inclusion here does not imply endorsement by Netflix.
+                    We make no claim of ownership to any content, images, or trademarks owned by Netflix. All rights to Netflix's content belong to Netflix, Inc. and its affiliates.
+                    For inquiries or concerns regarding copyright issues related to Netflix's content, please contact Netflix directly.
+                    This website and its creators are not affiliated with, endorsed by, or sponsored by Netflix, Inc. or any of its affiliates.
+                </p>
                 <br></br>
                 <br></br>
-            </footer >
+            </footer>
             {videoSrc !== null &&
                 (
                     <div id='home-content-video-player'>
