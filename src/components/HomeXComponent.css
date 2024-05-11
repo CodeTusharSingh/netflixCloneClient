@@ -114,3 +114,15 @@
     width: 95%;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 775px) {
+    #home-content-scroll-bottons {
+        position: relative;
+        bottom: 173px;
+        left: 16px;
+        width: 98.8%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
