@@ -91,6 +91,28 @@
     flex-wrap: wrap;
 }
 
+#home-header-search-comp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+#home-header-search-mobile {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 1px;
+}
+
 #home-header-account-icon img:hover {
     transform: scale(1.5);
 }
@@ -112,6 +134,16 @@
     font-family: NetflixSans;
     font-size: 18px;
     color: rgb(34, 34, 34);
+}
+
+#home-main-content-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 50px;
 }
 
 #home-popular-title h3 {
@@ -186,4 +218,83 @@
     color: white;
     font-family: NetflixSansLite;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 775px) {
+    #home-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0));
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    #home-header-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    #home-header-navbar img {
+        display: none;
+    }
+
+    #home-header-account-icon {
+        display: flex;
+        position: relative;
+        right: 0px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #home-header-search-comp {
+        display: none;
+    }
+
+    #home-header-search-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 1px;
+    }
+
+    #home-main {
+        position: relative;
+        top: 200px;
+    }
+
+    #home-main-content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    #home-main-content img {
+        width: 210%;
+        height: 100%;
+    }
+
+    #home-main-content-controls {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-left: 50px;
+    }
 }
