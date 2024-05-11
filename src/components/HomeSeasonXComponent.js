@@ -291,6 +291,8 @@ function HomeSeasonXComponent({ series, seasons, moreDetails }) {
     const playEpisodes = async (index) => {
         setVideoSrc(selectedSeason[selectedPart][0].episodeLink[index])
         setVideoTitle(`${selectedPart} : ${selectedSeason[selectedPart][0].episodeName[index]}`)
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
         try {
             const response = await fetch('https://netflixcloneserver-1g07.onrender.com/userHistory/add', {
                 method: 'POST',
@@ -385,7 +387,7 @@ function HomeSeasonXComponent({ series, seasons, moreDetails }) {
                     </div>
                 </div>
                 <div id='home-season-info'>
-                    <div style={{ width: '60%' }}>
+                    <div id='home-season-info-div-1'>
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                             <p style={{ color: '#a1a1a1', width: 'fit-content', height: 'fit-content', fontSize: '16px', fontFamily: 'NetflixSans' }}>{seriesArray.releaseYear}</p>
                             <p style={{ color: '#a1a1a1', width: 'fit-content', height: 'fit-content', fontSize: '16px', fontFamily: 'NetflixSansLite' }}>&nbsp;&nbsp;&nbsp;</p>
@@ -397,7 +399,7 @@ function HomeSeasonXComponent({ series, seasons, moreDetails }) {
                             <p style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{seriesArray.summary}</p>
                         </div>
                     </div>
-                    <div style={{ width: '40%' }}>
+                    <div id='home-season-info-div-2'>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>Cast: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{seriesArray.starring}</span></p>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>Genres: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{moreDetailsArray.genres}</span></p>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>This show is: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{moreDetailsArray.thisShowIs}</span></p>
