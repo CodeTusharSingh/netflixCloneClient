@@ -291,64 +291,90 @@ function HomeXComponent({ contents }) {
         }, 1000)
     }
 
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        console.log(width);
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [width]);
+
 
     useEffect(() => {
         clearTimeout(timeoutRef.current)
         if (loading === false) {
+            if (width > 775) {
 
-            leftButtonRef.current.style.display = 'none';
-            rightButtonRef.current.style.display = 'none';
+                leftButtonRef.current.style.display = 'none';
+                rightButtonRef.current.style.display = 'none';
 
-            divRef.current[Math.floor(i / 4)].style.position = 'absolute'
-            divRef.current[Math.floor(i / 4)].style.zIndex = '3'
+                divRef.current[Math.floor(i / 4)].style.position = 'absolute'
+                divRef.current[Math.floor(i / 4)].style.zIndex = '3'
 
-            homeContentDivRef.current[i].style.transition = 'transform 0.25s';
-            homeContentDivRef.current[i].style.position = 'relative';
-            homeContentDivRef.current[i].style.zIndex = '5';
-            homeContentDivRef.current[i].style.transformOrigin = 'bottom left';
-            homeContentDivRef.current[i].style.transform = 'scale(1.25) translateX(-10%)';
-            insiderImgRef.current[i].style.boxShadow = '0px 0px 20px black';
-            insiderComponentRef.current[i].style.display = 'block';
-
-
-            if (videoLink !== null) {
-                moreInfoRef.current[i].style.display = 'block';
-                insiderImgRef.current[i].style.display = 'none';
-                insiderVolumneControlRef.current[i].style.display = 'block';
-                videoTitleImgRef.current[i].style.display = 'block';
-                videoPlayButtonRef.current[i].style.display = 'inline'
+                homeContentDivRef.current[i].style.transition = 'transform 0.25s';
+                homeContentDivRef.current[i].style.position = 'relative';
+                homeContentDivRef.current[i].style.zIndex = '5';
+                homeContentDivRef.current[i].style.transformOrigin = 'bottom left';
+                homeContentDivRef.current[i].style.transform = 'scale(1.25) translateX(-10%)';
+                insiderImgRef.current[i].style.boxShadow = '0px 0px 20px black';
+                insiderComponentRef.current[i].style.display = 'block';
 
 
-                if (videoInsiderRef.current[i]) {
-                    videoInsiderRef.current[i].style.display = 'block';
-                    if (videoInsiderRef.current[i].paused) {
-                        videoInsiderRef.current[i].play().catch(error => {
-                            insiderImgRef.current[i].style.display = 'block';
-                            console.error('Error playing video:', error)
-                        });
+
+                if (videoLink !== null) {
+                    moreInfoRef.current[i].style.display = 'block';
+                    insiderImgRef.current[i].style.display = 'none';
+                    insiderVolumneControlRef.current[i].style.display = 'block';
+                    videoTitleImgRef.current[i].style.display = 'block';
+                    videoPlayButtonRef.current[i].style.display = 'inline'
+
+
+                    if (videoInsiderRef.current[i]) {
+                        videoInsiderRef.current[i].style.display = 'block';
+                        if (videoInsiderRef.current[i].paused) {
+                            videoInsiderRef.current[i].play().catch(error => {
+                                insiderImgRef.current[i].style.display = 'block';
+                                console.error('Error playing video:', error)
+                            });
+                        }
+                    }
+
+                    if (videoInsiderRef.current[i].muted) {
+                        insiderMuteRef.current[i].style.display = 'block';
+                        insiderUnmuteRef.current[i].style.display = 'none';
+                    } else {
+                        insiderMuteRef.current[i].style.display = 'none';
+                        insiderUnmuteRef.current[i].style.display = 'block';
                     }
                 }
-
-                if (videoInsiderRef.current[i].muted) {
-                    insiderMuteRef.current[i].style.display = 'block';
-                    insiderUnmuteRef.current[i].style.display = 'none';
-                } else {
-                    insiderMuteRef.current[i].style.display = 'none';
-                    insiderUnmuteRef.current[i].style.display = 'block';
+                else {
+                    setImgLink('')
+                    setMaturityRatingLink('')
+                    setContentInfoLink('')
+                    setSeasonLink('')
+                    setRuntimeLink('')
+                    setEpisodeLink('')
+                    videoPlayButtonRef.current[i].style.display = 'none'
+                    insiderImgRef.current[i].style.display = 'block';
+                    insiderVolumneControlRef.current[i].style.display = 'none';
+                    videoTitleImgRef.current[i].style.display = 'none';
+                    moreInfoRef.current[i].style.display = 'none';
                 }
-            }
-            else {
-                setImgLink('')
-                setMaturityRatingLink('')
-                setContentInfoLink('')
-                setSeasonLink('')
-                setRuntimeLink('')
-                setEpisodeLink('')
-                videoPlayButtonRef.current[i].style.display = 'none'
-                insiderImgRef.current[i].style.display = 'block';
-                insiderVolumneControlRef.current[i].style.display = 'none';
-                videoTitleImgRef.current[i].style.display = 'none';
-                moreInfoRef.current[i].style.display = 'none';
+            } else if (width <= 775) {
+                if (videoLink !== null) {
+                    updateShowMore(true)
+                }
+                else {
+                    console.log('content not available!!!');
+                }
             }
         }
         return () => {
@@ -400,12 +426,9 @@ function HomeXComponent({ contents }) {
     }
 
 
-
     const addListTitleRef = useRef([]);
     const removeListTitleRef = useRef([]);
     const moreInfoTitleRef = useRef([]);
-
-
 
 
     const handleListClick = async (index) => {
