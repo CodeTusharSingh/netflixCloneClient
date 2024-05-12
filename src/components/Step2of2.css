@@ -183,3 +183,59 @@ td {
 #next-4:active {
     background-color: rgb(120, 20, 46);
 }
+
+#scroll-right-choose-plan {
+    font-size: larger;
+    display: none;
+}
+
+
+@media only screen and (max-width: 775px) {
+    #middle-container-4 {
+        margin: 0 auto;
+        width: 90%;
+        height: 1400px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    #scroll-right-choose-plan {
+        font-size: larger;
+        display: inline;
+    }
+
+    #mobile-choose-plan {
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 700px;
+    }
+
+    #containerplan {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: right;
+        width: 980px;
+    }
+
+    #plandetails {
+        font-family: "NetflixSansLite";
+        border-collapse: collapse;
+        position: relative;
+        top: 40px;
+        width: 980px;
+    }
+
+    #next-4 {
+        font-family: "NetflixSans";
+        background-color: rgb(229, 9, 20);
+        font-size: 22px;
+        padding: 17px 100px;
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
