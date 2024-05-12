@@ -443,197 +443,200 @@ function Step2of2() {
                     </p>
                 </div>
                 <br></br>
-                <div id="containerplan">
-                    <div id="mobile" style={mobileStyle} onClick={handleMobileClick}>
-                        <center>
-                            <p>Mobile</p>
-                        </center>
-                        <div id="mobsq" style={mobileSquare}></div>
+                <p id='scroll-right-choose-plan'>Scroll ➡</p>
+                <div id='mobile-choose-plan'>
+                    <div id="containerplan">
+                        <div id="mobile" style={mobileStyle} onClick={handleMobileClick}>
+                            <center>
+                                <p>Mobile</p>
+                            </center>
+                            <div id="mobsq" style={mobileSquare}></div>
+                        </div>
+                        <div id="basic" style={basicStyle} onClick={handleBasicClick}>
+                            <center>
+                                <p>Basic</p>
+                            </center>
+                            <div id="basq" style={basicSquare}></div>
+                        </div>
+                        <div id="standard" style={standardStyle} onClick={handleStandardClick}>
+                            <center>
+                                <p>Standard</p>
+                            </center>
+                            <div id="stdsq" style={standardSquare}></div>
+                        </div>
+                        <div id="premium" style={premiumStyle} onClick={handlePremiumClick}>
+                            <center>
+                                <p>Premium</p>
+                            </center>
+                            <div id="presq" style={premiumSquare}></div>
+                        </div>
                     </div>
-                    <div id="basic" style={basicStyle} onClick={handleBasicClick}>
-                        <center>
-                            <p>Basic</p>
-                        </center>
-                        <div id="basq" style={basicSquare}></div>
-                    </div>
-                    <div id="standard" style={standardStyle} onClick={handleStandardClick}>
-                        <center>
-                            <p>Standard</p>
-                        </center>
-                        <div id="stdsq" style={standardSquare}></div>
-                    </div>
-                    <div id="premium" style={premiumStyle} onClick={handlePremiumClick}>
-                        <center>
-                            <p>Premium</p>
-                        </center>
-                        <div id="presq" style={premiumSquare}></div>
-                    </div>
+                    <table id="plandetails">
+                        <tr>
+                            <td style={{ width: '220px', color: 'rgb(79, 79, 79)' }}>Monthly price</td>
+                            <td style={{ position: 'relative', width: '200px', color: mobileColor }}>
+                                <div id="mobplan1" style={{ position: 'relative', left: '105px', fontWeight: '700' }}>₹149</div>
+                            </td>
+                            <td style={{ position: 'relative', color: basicColor }}>
+                                <div id="basplan1" style={{ position: 'relative', left: '40px', fontWeight: '700' }}> ₹199</div>
+                            </td>
+                            <td style={{ position: 'relative', color: standardColor }}>
+                                <div id="stdplan1" style={{ position: 'relative', left: '60px', fontWeight: '700' }}>₹499</div>
+                            </td>
+                            <td style={{ position: 'relative', width: '150px', color: premiumColor }}>
+                                <div id="preplan1" style={{ position: 'relative', left: '90px', fontWeight: '700' }}>₹649</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{ color: 'rgb(79, 79, 79)' }}>Video quality</td>
+                            <td style={{ color: mobileColor }}>
+                                <div id="mobplan2" style={{ position: 'relative', left: '110px', fontWeight: '700' }}>Good</div>
+                            </td>
+                            <td style={{ color: basicColor }}>
+                                <div id="basplan2" style={{ position: 'relative', left: '40px', fontWeight: '700' }}>Good</div>
+                            </td>
+                            <td style={{ color: standardColor }}>
+                                <div id="stdplan2" style={{ position: 'relative', left: '60px', fontWeight: '700' }}>Better</div>
+                            </td>
+                            <td style={{ color: premiumColor }}>
+                                <div id="preplan2" style={{ position: 'relative', left: '95px', fontWeight: '700' }}>Best</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{ color: 'rgb(79, 79, 79)' }}>Resolution</td>
+                            <td style={{ color: mobileColor }}>
+                                <div id="mobplan3" style={{ position: 'relative', left: '110px', fontWeight: '700' }}>480p</div>
+                            </td>
+                            <td style={{ color: basicColor }}>
+                                <div id="basplan3" style={{ position: 'relative', left: '40px', fontWeight: '700' }}>720p</div>
+                            </td>
+                            <td style={{ color: standardColor }}>
+                                <div id="stdplan3" style={{ position: 'relative', left: '57px', fontWeight: '700' }}>1080p</div>
+                            </td>
+                            <td style={{ color: premiumColor }}>
+                                <div id="preplan3" style={{ position: 'relative', left: '80px', fontWeight: '700' }}>4K+HDR</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{ border: 'none', position: 'relative', bottom: '130px', color: 'rgb(79, 79, 79)' }}>Devices you can use to watch</td>
+                            <td style={{ border: 'none', position: 'relative', left: '102px' }} >
+                                <div id="device-column-1" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 'fit-content', userSelect: 'none' }}>
+                                    <svg width={"40px"} height={"56px"}>
+                                        <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={mobileColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="18" cy="33" r="2" stroke={mobileColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='0' y='55' fontSize={'13px'} fill={mobileColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"55px"} height={"50px"}>
+                                        <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={mobileColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="40" cy="18" r="2" stroke={mobileColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='5' y='49' fontSize={'13px'} fill={mobileColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke='rgb(255,255,255)' strokeWidth={'2'}></polyline>
+                                        <polyline points='0,43 60,43 ' fill='none' stroke='rgb(255,255,255)' strokeWidth={'4'}></polyline>
+                                        <text x='0' y='59' fontSize={'13px'} fill='rgb(255,255,255)' fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke='rgb(255,255,255)' strokeWidth={'2'}></polyline>
+                                        <polyline points='19,42 40,42' fill='none' stroke='rgb(255,255,255)' strokeWidth={'5'}></polyline>
+                                        <text x='20' y='59' fontSize={'13px'} fill='rgb(255,255,255)' fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
+                                    </svg>
+                                </div>
+                            </td >
+
+
+                            <td style={{ border: 'none', position: 'relative', left: '62px' }}>
+                                <div id="device-column-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', position: 'relative', right: '50px', userSelect: 'none' }}>
+                                    <svg width={"40px"} height={"56px"}>
+                                        <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={basicColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="18" cy="33" r="2" stroke={basicColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='0' y='55' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"55px"} height={"50px"}>
+                                        <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={basicColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="40" cy="18" r="2" stroke={basicColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='5' y='49' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={basicColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='0,43 60,43 ' fill='none' stroke={basicColor} strokeWidth={'4'}></polyline>
+                                        <text x='0' y='59' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={basicColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='19,42 40,42' fill='none' stroke={basicColor} strokeWidth={'5'}></polyline>
+                                        <text x='20' y='59' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
+                                    </svg>
+                                </div>
+                            </td>
+
+
+                            <td style={{ border: 'none', position: 'relative', left: '37px' }}>
+
+                                <div id="device-column-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', userSelect: 'none' }}>
+                                    <svg width={"40px"} height={"56px"}>
+                                        <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={standardColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="18" cy="33" r="2" stroke={standardColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='0' y='55' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"55px"} height={"50px"}>
+                                        <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={standardColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="40" cy="18" r="2" stroke={standardColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='5' y='49' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={standardColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='0,43 60,43 ' fill='none' stroke={standardColor} strokeWidth={'4'}></polyline>
+                                        <text x='0' y='59' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={standardColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='19,42 40,42' fill='none' stroke={standardColor} strokeWidth={'5'}></polyline>
+                                        <text x='20' y='59' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
+                                    </svg>
+                                </div>
+                            </td>
+
+
+                            <td style={{ border: 'none', position: 'relative', left: '62px' }}>
+                                <div id="device-column-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', userSelect: 'none' }}>
+                                    <svg width={"40px"} height={"56px"}>
+                                        <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={premiumColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="18" cy="33" r="2" stroke={premiumColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='0' y='55' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"55px"} height={"50px"}>
+                                        <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={premiumColor} strokeWidth={"2"} fill="none"></rect>
+                                        <circle cx="40" cy="18" r="2" stroke={premiumColor} strokeWidth={"1"} fill="none"></circle>
+                                        <text x='5' y='49' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={premiumColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='0,43 60,43 ' fill='none' stroke={premiumColor} strokeWidth={'4'}></polyline>
+                                        <text x='0' y='59' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
+                                    </svg>
+                                    <br></br>
+                                    <svg width={"60px"} height={"62px"}>
+                                        <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={premiumColor} strokeWidth={'2'}></polyline>
+                                        <polyline points='19,42 40,42' fill='none' stroke={premiumColor} strokeWidth={'5'}></polyline>
+                                        <text x='20' y='59' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
+                                    </svg>
+                                </div>
+                            </td >
+                        </tr >
+                    </table >
                 </div>
-                <table id="plandetails">
-                    <tr>
-                        <td style={{ width: '220px', color: 'rgb(79, 79, 79)' }}>Monthly price</td>
-                        <td style={{ position: 'relative', width: '200px', color: mobileColor }}>
-                            <div id="mobplan1" style={{ position: 'relative', left: '105px', fontWeight: '700' }}>₹149</div>
-                        </td>
-                        <td style={{ position: 'relative', color: basicColor }}>
-                            <div id="basplan1" style={{ position: 'relative', left: '40px', fontWeight: '700' }}> ₹199</div>
-                        </td>
-                        <td style={{ position: 'relative', color: standardColor }}>
-                            <div id="stdplan1" style={{ position: 'relative', left: '60px', fontWeight: '700' }}>₹499</div>
-                        </td>
-                        <td style={{ position: 'relative', width: '150px', color: premiumColor }}>
-                            <div id="preplan1" style={{ position: 'relative', left: '90px', fontWeight: '700' }}>₹649</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{ color: 'rgb(79, 79, 79)' }}>Video quality</td>
-                        <td style={{ color: mobileColor }}>
-                            <div id="mobplan2" style={{ position: 'relative', left: '110px', fontWeight: '700' }}>Good</div>
-                        </td>
-                        <td style={{ color: basicColor }}>
-                            <div id="basplan2" style={{ position: 'relative', left: '40px', fontWeight: '700' }}>Good</div>
-                        </td>
-                        <td style={{ color: standardColor }}>
-                            <div id="stdplan2" style={{ position: 'relative', left: '60px', fontWeight: '700' }}>Better</div>
-                        </td>
-                        <td style={{ color: premiumColor }}>
-                            <div id="preplan2" style={{ position: 'relative', left: '95px', fontWeight: '700' }}>Best</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{ color: 'rgb(79, 79, 79)' }}>Resolution</td>
-                        <td style={{ color: mobileColor }}>
-                            <div id="mobplan3" style={{ position: 'relative', left: '110px', fontWeight: '700' }}>480p</div>
-                        </td>
-                        <td style={{ color: basicColor }}>
-                            <div id="basplan3" style={{ position: 'relative', left: '40px', fontWeight: '700' }}>720p</div>
-                        </td>
-                        <td style={{ color: standardColor }}>
-                            <div id="stdplan3" style={{ position: 'relative', left: '57px', fontWeight: '700' }}>1080p</div>
-                        </td>
-                        <td style={{ color: premiumColor }}>
-                            <div id="preplan3" style={{ position: 'relative', left: '80px', fontWeight: '700' }}>4K+HDR</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{ border: 'none', position: 'relative', bottom: '130px', color: 'rgb(79, 79, 79)' }}>Devices you can use to watch</td>
-                        <td style={{ border: 'none', position: 'relative', left: '102px' }} >
-                            <div id="device-column-1" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 'fit-content', userSelect: 'none' }}>
-                                <svg width={"40px"} height={"56px"}>
-                                    <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={mobileColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="18" cy="33" r="2" stroke={mobileColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='0' y='55' fontSize={'13px'} fill={mobileColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"55px"} height={"50px"}>
-                                    <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={mobileColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="40" cy="18" r="2" stroke={mobileColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='5' y='49' fontSize={'13px'} fill={mobileColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke='rgb(255,255,255)' strokeWidth={'2'}></polyline>
-                                    <polyline points='0,43 60,43 ' fill='none' stroke='rgb(255,255,255)' strokeWidth={'4'}></polyline>
-                                    <text x='0' y='59' fontSize={'13px'} fill='rgb(255,255,255)' fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke='rgb(255,255,255)' strokeWidth={'2'}></polyline>
-                                    <polyline points='19,42 40,42' fill='none' stroke='rgb(255,255,255)' strokeWidth={'5'}></polyline>
-                                    <text x='20' y='59' fontSize={'13px'} fill='rgb(255,255,255)' fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
-                                </svg>
-                            </div>
-                        </td >
-
-
-                        <td style={{ border: 'none', position: 'relative', left: '62px' }}>
-                            <div id="device-column-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', position: 'relative', right: '50px', userSelect: 'none' }}>
-                                <svg width={"40px"} height={"56px"}>
-                                    <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={basicColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="18" cy="33" r="2" stroke={basicColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='0' y='55' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"55px"} height={"50px"}>
-                                    <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={basicColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="40" cy="18" r="2" stroke={basicColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='5' y='49' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={basicColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='0,43 60,43 ' fill='none' stroke={basicColor} strokeWidth={'4'}></polyline>
-                                    <text x='0' y='59' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={basicColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='19,42 40,42' fill='none' stroke={basicColor} strokeWidth={'5'}></polyline>
-                                    <text x='20' y='59' fontSize={'13px'} fill={basicColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
-                                </svg>
-                            </div>
-                        </td>
-
-
-                        <td style={{ border: 'none', position: 'relative', left: '37px' }}>
-
-                            <div id="device-column-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', userSelect: 'none' }}>
-                                <svg width={"40px"} height={"56px"}>
-                                    <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={standardColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="18" cy="33" r="2" stroke={standardColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='0' y='55' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"55px"} height={"50px"}>
-                                    <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={standardColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="40" cy="18" r="2" stroke={standardColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='5' y='49' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={standardColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='0,43 60,43 ' fill='none' stroke={standardColor} strokeWidth={'4'}></polyline>
-                                    <text x='0' y='59' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={standardColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='19,42 40,42' fill='none' stroke={standardColor} strokeWidth={'5'}></polyline>
-                                    <text x='20' y='59' fontSize={'13px'} fill={standardColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
-                                </svg>
-                            </div>
-                        </td>
-
-
-                        <td style={{ border: 'none', position: 'relative', left: '62px' }}>
-                            <div id="device-column-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100px', userSelect: 'none' }}>
-                                <svg width={"40px"} height={"56px"}>
-                                    <rect x="6" y="2" height={"37px"} width={"24px"} ry="3" rx="3" stroke={premiumColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="18" cy="33" r="2" stroke={premiumColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='0' y='55' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Phone</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"55px"} height={"50px"}>
-                                    <rect x="5" y="2" height={"30px"} width={"40px"} ry="3" rx="3" stroke={premiumColor} strokeWidth={"2"} fill="none"></rect>
-                                    <circle cx="40" cy="18" r="2" stroke={premiumColor} strokeWidth={"1"} fill="none"></circle>
-                                    <text x='5' y='49' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Tablet</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40' fill='none' stroke={premiumColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='0,43 60,43 ' fill='none' stroke={premiumColor} strokeWidth={'4'}></polyline>
-                                    <text x='0' y='59' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>Computer</text>
-                                </svg>
-                                <br></br>
-                                <svg width={"60px"} height={"62px"}>
-                                    <polyline points='4,40 4,2 55,2 55,40 3,40' fill='none' stroke={premiumColor} strokeWidth={'2'}></polyline>
-                                    <polyline points='19,42 40,42' fill='none' stroke={premiumColor} strokeWidth={'5'}></polyline>
-                                    <text x='20' y='59' fontSize={'13px'} fill={premiumColor} fontWeight={'600'} fontFamily='NetflixSans'>TV</text>
-                                </svg>
-                            </div>
-                        </td >
-                    </tr >
-                </table >
                 <br></br>
                 <br></br>
                 <br></br>
