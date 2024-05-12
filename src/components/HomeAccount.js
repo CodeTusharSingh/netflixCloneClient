@@ -183,7 +183,7 @@ function HomeAccount() {
                         <h3 style={{ color: 'white', fontFamily: 'NetflixSansLite' }}>Feedback:</h3>
                         {showFeedback && <>
                             <textarea
-                                style={{ width: '400px', backgroundColor: '#181818', color: 'white', fontFamily: 'NetflixSansLite', fontSize: '16px', borderRadius: '4px' }}
+                                style={{ width: '80%', backgroundColor: '#181818', color: 'white', fontFamily: 'NetflixSansLite', fontSize: '16px', borderRadius: '4px' }}
                                 id="myTextBox"
                                 rows="7"
                                 value={text}
