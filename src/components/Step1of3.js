@@ -137,7 +137,7 @@ function Step1of3() {
                 <h3>Secure for peace of mind.<br></br>
                     Cancel easily online.</h3>
                 <div id='payment-options'>
-                    <p style={{ position: 'relative', top: '10px', left: '180px' }}>End-to-end encrypted🔒</p>
+                    <p id='end-to-end' >End-to-end encrypted🔒</p>
                     <div id='option-1' onClick={handleClick}>
                         <div id='card-option'>
                             <p>Credit or Debit Card</p>
@@ -146,7 +146,7 @@ function Step1of3() {
                             <img src={amex} alt='Amex' width={'40px'} height={'25px'}></img>
                             <img src={diners} alt='Diners' width={'40px'} height={'25px'}></img>
                         </div>
-                        <div style={{ paddingRight: '10px', position: 'relative', bottom: '5px' }}>
+                        <div style={{ paddingRight: '10px', position: 'relative' }}>
                             <p> {'>'} </p>
                         </div>
                     </div>
@@ -160,7 +160,7 @@ function Step1of3() {
                             <img src={amazonpay} alt='Amazonpay' width={'40px'} height={'25px'}></img>
                             <img src={bhim} alt='BHIM' width={'40px'} height={'25px'}></img>
                         </div>
-                        <div style={{ paddingRight: '10px', position: 'relative', bottom: '5px' }}>
+                        <div style={{ paddingRight: '10px', position: 'relative' }}>
                             <p> {'>'} </p>
                         </div>
                     </div>
