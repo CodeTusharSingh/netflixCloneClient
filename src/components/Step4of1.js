@@ -124,20 +124,19 @@ function Step4of1() {
             <br></br>
             <br></br>
             <div id="middle-container-6">
-                {incorrect && <div id='warning-1'>
-                    <div>
-                        <svg height={'24px'} width={'24px'} >
-                            <polygon points='0,24 12,0 24,24' fill='black' stroke='black' strokeWidth='1'></polygon>
-                            <line x1='12' y1='8' x2='12' y2='16' stroke='#D89D31' strokeWidth={'2'}></line>
-                            <line x1='12' y1='18' x2='12' y2='20' stroke='#D89D31' strokeWidth={'2'}></line>
-                        </svg>
+                {incorrect &&
+                    <div id='warning-1'>
+                        <div>
+                            <svg height={'24px'} width={'24px'} >
+                                <polygon points='0,24 12,0 24,24' fill='black' stroke='black' strokeWidth='1'></polygon>
+                                <line x1='12' y1='8' x2='12' y2='16' stroke='#D89D31' strokeWidth={'2'}></line>
+                                <line x1='12' y1='18' x2='12' y2='20' stroke='#D89D31' strokeWidth={'2'}></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <p style={{ fontFamily: 'NetflixSans', color: 'black' }}>Your password is incorrect. Please try again.</p>
+                        </div>
                     </div>
-
-                    <div>
-
-                        <p style={{ fontFamily: 'NetflixSans', color: 'black' }}>Your password is incorrect. Please try again.</p>
-                    </div>
-                </div>
                 }
 
                 <p>STEP <b>1</b> OF <b>3</b></p>
@@ -153,7 +152,7 @@ function Step4of1() {
                         <input id='setup-password' type='password' autoComplete='on' placeholder={initialPassState} onFocus={handlePassFocus} onBlur={handlePassBlur} onChange={handlePasswordChange} value={passwordValue}></input>
                     </div>
                     <br></br>
-                    <a href='/' id='forgot-password-1'>Forget your password?</a>
+                    {/* <a href='/' id='forgot-password-1'>Forget your password?</a> */}
                     <br></br>
                     <br></br>
                     <input id='submit-setup-login-form' type='submit' value='Next' onClick={handleSubmit}></input>
