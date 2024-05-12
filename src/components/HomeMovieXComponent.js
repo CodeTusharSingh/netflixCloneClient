@@ -323,7 +323,7 @@ function HomeMovieXComponent({ series, moreDetails }) {
                     </div>
                 </div>
                 <div id='home-movie-info'>
-                    <div style={{ width: '60%' }}>
+                    <div id='home-movie-info-div-1'>
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                             <p style={{ color: '#a1a1a1', width: 'fit-content', height: 'fit-content', fontSize: '16px', fontFamily: 'NetflixSans' }}>{seriesArray.releaseYear}</p>
                             <p style={{ color: '#a1a1a1', width: 'fit-content', height: 'fit-content', fontSize: '16px', fontFamily: 'NetflixSansLite' }}>&nbsp;&nbsp;&nbsp;</p>
@@ -335,7 +335,7 @@ function HomeMovieXComponent({ series, moreDetails }) {
                             <p style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{seriesArray.summary}</p>
                         </div>
                     </div>
-                    <div style={{ width: '40%' }}>
+                    <div id='home-movie-info-div-2'>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>Cast: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{seriesArray.starring}</span></p>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>Genres: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{moreDetailsArray.genres}</span></p>
                         <p style={{ color: '#a1a1a1', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>This movie is: <span style={{ color: 'white', fontSize: '14px', fontFamily: 'NetflixSansLite' }}>{moreDetailsArray.thisMovieIs}</span></p>
