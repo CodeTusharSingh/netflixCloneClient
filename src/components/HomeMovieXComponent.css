@@ -39,6 +39,14 @@
     width: 400px;
 }
 
+#home-movie-info-div-1 {
+    width: 60%;
+}
+
+#home-movie-info-div-2 {
+    width: 40%;
+}
+
 #home-movie-info-volume-control-buttons {
     height: 42px;
     border: 1px solid #a1a1a1;
@@ -115,4 +123,48 @@
     align-items: center;
     width: 95%;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 775px) {
+    #home-movie-info-video-components {
+        position: relative;
+        top: 300px;
+        width: 90%;
+        left: 20px;
+    }
+
+    #home-movie-info-video-components img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #home-movie-info {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        position: relative;
+        left: 20px;
+    }
+
+    #home-movie-info-div-1 {
+        width: 90%;
+    }
+
+    #home-movie-info-div-2 {
+        width: 90%;
+    }
+
+
+    #home-movie-trailer {
+        position: relative;
+        left: 20px;
+        width: 90%;
+        border-bottom: 1px solid #a1a1a1;
+    }
+
+    #home-movie-about {
+        position: relative;
+        left: 40px;
+        width: 90%;
+    }
 }
