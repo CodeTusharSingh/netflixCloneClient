@@ -73,7 +73,7 @@ function SignOut() {
             <div id='sign-out-main-div'>
                 <h1>Leaving So Soon?</h1>
                 <p>Just so you know, you don't always need to sign out of Netflix, it's only necessary if you're on a shared or public computer.</p>
-                <p>You'll be redirected to Netflix.com in {countdown} seconds.</p>
+                <p>You'll be redirected to netflixclone-0y0x.onrender.com in {countdown} seconds.</p>
                 <button onClick={signout}>Go Now</button>
             </div>
             <footer id="signInFooter">
