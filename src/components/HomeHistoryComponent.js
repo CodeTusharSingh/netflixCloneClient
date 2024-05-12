@@ -196,56 +196,86 @@ function HomeHistoryComponent({ contents }) {
             updateContentType(contentArray.contentType[index]);
             setI(index);
             setLoading(false);
-        }, 2000)
+        }, 1000)
     }
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        console.log(width);
+        if (width <= 775) {
+            homeContainerRef.current.style.marginLeft = '25px';
+        } else {
+            homeContainerRef.current.style.marginLeft = '50px';
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [width]);
 
 
     useEffect(() => {
         clearTimeout(timeoutRef.current)
         if (loading === false) {
-            homeContentDivRef.current[i].style.transition = 'transform 0.25s';
-            homeContentDivRef.current[i].style.position = 'relative';
-            homeContentDivRef.current[i].style.zIndex = '101';
-            homeContentDivRef.current[i].style.transformOrigin = 'bottom left';
-            homeContentDivRef.current[i].style.transform = 'scale(1.25) translateX(-10%)';
+            if (width > 775) {
+                homeContentDivRef.current[i].style.transition = 'transform 0.25s';
+                homeContentDivRef.current[i].style.position = 'relative';
+                homeContentDivRef.current[i].style.zIndex = '101';
+                homeContentDivRef.current[i].style.transformOrigin = 'bottom left';
+                homeContentDivRef.current[i].style.transform = 'scale(1.25) translateX(-10%)';
 
-            insiderImgRef.current[i].style.boxShadow = '0px 0px 20px black';
-            insiderComponentRef.current[i].style.display = 'block';
+                insiderImgRef.current[i].style.boxShadow = '0px 0px 20px black';
+                insiderComponentRef.current[i].style.display = 'block';
 
-            if (videoLink !== null) {
-                insiderImgRef.current[i].style.display = 'none';
-                insiderVolumneControlRef.current[i].style.display = 'block';
-                videoTitleImgRef.current[i].style.display = 'block';
+                if (videoLink !== null) {
+                    insiderImgRef.current[i].style.display = 'none';
+                    insiderVolumneControlRef.current[i].style.display = 'block';
+                    videoTitleImgRef.current[i].style.display = 'block';
 
-                if (videoInsiderRef.current[i]) {
-                    videoInsiderRef.current[i].style.display = 'block';
-                    if (videoInsiderRef.current[i].paused) {
-                        videoInsiderRef.current[i].play().catch(error => {
-                            insiderImgRef.current[i].style.display = 'block';
-                            console.error('Error playing video:', error)
-                        });
+                    if (videoInsiderRef.current[i]) {
+                        videoInsiderRef.current[i].style.display = 'block';
+                        if (videoInsiderRef.current[i].paused) {
+                            videoInsiderRef.current[i].play().catch(error => {
+                                insiderImgRef.current[i].style.display = 'block';
+                                console.error('Error playing video:', error)
+                            });
+                        }
                     }
-                }
 
-                if (videoInsiderRef.current[i].muted) {
-                    insiderMuteRef.current[i].style.display = 'block';
-                    insiderUnmuteRef.current[i].style.display = 'none';
-                } else {
-                    insiderMuteRef.current[i].style.display = 'none';
-                    insiderUnmuteRef.current[i].style.display = 'block';
-                }
+                    if (videoInsiderRef.current[i].muted) {
+                        insiderMuteRef.current[i].style.display = 'block';
+                        insiderUnmuteRef.current[i].style.display = 'none';
+                    } else {
+                        insiderMuteRef.current[i].style.display = 'none';
+                        insiderUnmuteRef.current[i].style.display = 'block';
+                    }
 
-            }
-            else {
-                setImgLink('')
-                setMaturityRatingLink('')
-                setContentInfoLink('')
-                setSeasonLink('')
-                setRuntimeLink('')
-                setEpisodeLink('')
-                insiderImgRef.current[i].style.display = 'block';
-                insiderVolumneControlRef.current[i].style.display = 'none';
-                videoTitleImgRef.current[i].style.display = 'none';
+                }
+                else {
+                    setImgLink('')
+                    setMaturityRatingLink('')
+                    setContentInfoLink('')
+                    setSeasonLink('')
+                    setRuntimeLink('')
+                    setEpisodeLink('')
+                    insiderImgRef.current[i].style.display = 'block';
+                    insiderVolumneControlRef.current[i].style.display = 'none';
+                    videoTitleImgRef.current[i].style.display = 'none';
+                }
+            } else if (width <= 775) {
+                if (videoLink !== null) {
+                    updateShowMore(true)
+                }
+                else {
+                    console.log('content not available!!!');
+                }
             }
         }
         return () => {
