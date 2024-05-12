@@ -67,3 +67,42 @@ label::selection {
 #submit-signup-form:active {
     background-color: rgb(120, 20, 46);
 }
+
+@media only screen and (max-width: 775px) {
+    #email-input {
+        color: rgb(79, 79, 79);
+        padding: 15px;
+        font-family: 'NetflixSansLite';
+        width: 90%;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px black solid;
+    }
+
+    #password-input {
+        color: rgb(79, 79, 79);
+        padding: 15px;
+        font-family: 'NetflixSansLite';
+        width: 90%;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px black solid;
+    }
+
+    #middle-container-1 {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #submit-signup-form {
+        padding: 17px;
+        width: 100%;
+        background-color: rgb(229, 9, 20);
+        color: white;
+        font-size: 22px;
+        border: none;
+        border-radius: 4px;
+        font-family: 'NetflixSans';
+        cursor: pointer;
+    }
+}
