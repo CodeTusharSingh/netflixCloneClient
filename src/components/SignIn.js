@@ -93,7 +93,8 @@ function SignIn() {
     const [count, setCount] = useState(0);
 
 
-    const hideShow = () => {
+    const hideShow = (event) => {
+        event.preventDefault();
         if (count === 0) {
             setPassType('text')
             setButtontext('HIDE')
@@ -120,7 +121,7 @@ function SignIn() {
         fontFamily: 'NetflixSans',
         color: 'rgb(51,51,51)'
     })
-    const [emailPlaceholder, setEmailPlaceholder] = useState('Email or phone number');
+    const [emailPlaceholder, setEmailPlaceholder] = useState('Email');
     const [passPlaceholder, setPassPlaceholder] = useState('Password');
     const handleEmailFocus = () => {
         setEmailPlaceholder('')
@@ -170,9 +171,9 @@ function SignIn() {
             </div>
             <div id="middle-container-7">
                 <h1>Sign In</h1>
-                <form id='signInForm' onSubmit={handleSubmit}>
+                <form id='signInForm' >
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <label forhtml='signInFormEmail' style={emailLabelStyle}>Email or phone number</label>
+                        <label forhtml='signInFormEmail' style={emailLabelStyle}>Email</label>
                         <input type="text"
                             value={inputValue}
                             onChange={handleInputChange} placeholder={emailPlaceholder} id="signInFormEmail" onFocus={handleEmailFocus} onBlur={handleEmailBlur}></input>
@@ -187,10 +188,12 @@ function SignIn() {
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <label forhtml='signInFormPass' style={passLabelStyle}>Password</label>
                         <input type={passType} id="signInFormPass" placeholder={passPlaceholder} onFocus={handlePassFocus} onBlur={handlePassBlur} onChange={handlePasswordChange} ></input>
+                        <br></br>
                         {incorrectPassword && (<p id='incorrectPass' style={{ color: 'orange', fontFamily: 'NetflixSans', fontSize: '13px' }}>Incorrect password!!!</p>)}
-                        <button ref={showButtonRef} onClick={hideShow} style={{ width: 'fit-content', color: 'rgb(115,115,115)', fontFamily: 'NetflixSansLite', backgroundColor: 'rgb(0,0,0,0)', border: 'none', cursor: 'pointer', position: 'relative', left: '250px', bottom: '35px' }}>{buttontext}</button>
+                        <button ref={showButtonRef} onClick={hideShow} style={{ width: 'fit-content', color: 'rgb(115,115,115)', fontFamily: 'NetflixSansLite', backgroundColor: 'rgb(0,0,0,0)', border: 'none', cursor: 'pointer', position: 'relative', left: '0px', bottom: '0px' }}>{buttontext}</button>
                     </div>
-                    <input type='submit' id='signInFormSubmit' value={"Sign In"} style={{ cursor: 'pointer' }}></input><br></br><br></br>
+                    <br></br>
+                    <input type='submit' onClick={handleSubmit} id='signInFormSubmit' value={"Sign In"} style={{ cursor: 'pointer' }}></input><br></br><br></br>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between" }}>
                         <div>
                             <input type='checkbox' id='rememberCheckbox'></input>
