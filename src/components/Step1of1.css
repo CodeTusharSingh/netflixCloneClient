@@ -18,7 +18,7 @@
 #svg-device-logo {
     margin: 0 auto;
     display: flex;
-    width: 70%;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -71,4 +71,20 @@
 
 #middle-content a:active {
     background-color: rgb(120, 20, 46);
+}
+
+@media only screen and (max-width: 775px) {
+    #svg-device-logo {
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #middle-content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
