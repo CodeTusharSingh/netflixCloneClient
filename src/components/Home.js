@@ -11,7 +11,7 @@ import { VideoContext } from '../context/videoContext';
 import { HomeTypeContext } from '../context/homeTypeContext';
 import HomeSeasonXComponent from './HomeSeasonXComponent';
 import HomeMovieXComponent from './HomeMovieXComponent';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import HomeTVShowsComponent from './HomeTVShowsComponent';
 import HomeMovieComponent from './HomeMovieComponent';
 import HomeMyListComponent from './HomeMyListComponent';
@@ -33,22 +33,6 @@ function Home() {
     const [planExpired, setPlanExpired] = useState(false);
 
     let history = useNavigate();
-    const location = useLocation();
-
-  useEffect(() => {
-    const handlePopState = (event) => {
-      console.log('Popstate event:', event);
-      console.log('Current location:', location);
-      history('/home', { replace: true });
-      window.location.reload();
-    };
-
-    window.addEventListener('popstate', handlePopState);
-
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-    };
-  }, [history, location]);
 
     const check = async () => {
         try {
@@ -106,7 +90,30 @@ function Home() {
         return () => clearInterval(intervalId);
     }, []);
 
+const backCheck = () => {
+     try {
+            const response = await fetch('https://netflixcloneserver-1g07.onrender.com/home', {
+                method: 'GET',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include',
+            })
+            if (response.status === 200) {
+                window.location.reload();
+                console.log('backcheck success');
+            } else {
+                console.log('backcheck failed');
+            }
+        } catch (error) {
+            console.error('An error occurred while checking:', error);
+        }
+}
 
+    useEffect(()=>{
+        backCheck();
+    },[])
 
 
     const { contentLink, updateContentLink } = useContext(HomeContext);
