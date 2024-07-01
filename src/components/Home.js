@@ -36,7 +36,7 @@ function Home() {
     const location = useLocation();
 
   useEffect(() => {
-    const handlePopState = () => {
+    const handlePopState = (event) => {
       console.log('Popstate event:', event);
       console.log('Current location:', location);
       history('/home', { replace: true });
