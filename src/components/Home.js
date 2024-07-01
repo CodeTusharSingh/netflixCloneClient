@@ -101,7 +101,7 @@ const backCheck = async () => {
                 credentials: 'include',
             })
             if (response.status === 200) {
-                window.location.reload();
+        updateShowMore(false)
                 console.log('backcheck success');
             } else {
                 console.log('backcheck failed');
