@@ -32,19 +32,20 @@ function Home() {
     const [planExpired, setPlanExpired] = useState(false);
 
     let history = useNavigate();
+    const location = useLocation();
 
-    useEffect(() => {
-    const unlisten = history.listen((location, action) => {
-      if (action === 'POP') {
-        history('/home');
-        window.location.reload();
-      }
-    });
+  useEffect(() => {
+    const handlePopState = () => {
+      history('/home', { replace: true });
+      window.location.reload();
+    };
+
+    window.addEventListener('popstate', handlePopState);
 
     return () => {
-      unlisten();
+      window.removeEventListener('popstate', handlePopState);
     };
-  }, [history]);
+  }, [history, location]);
 
     const check = async () => {
         try {
