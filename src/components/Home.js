@@ -90,7 +90,7 @@ function Home() {
         return () => clearInterval(intervalId);
     }, []);
 
-const backCheck = () => {
+const backCheck = async () => {
      try {
             const response = await fetch('https://netflixcloneserver-1g07.onrender.com/home', {
                 method: 'GET',
