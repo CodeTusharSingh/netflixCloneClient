@@ -33,6 +33,19 @@ function Home() {
 
     let history = useNavigate();
 
+    useEffect(() => {
+    const unlisten = history.listen((location, action) => {
+      if (action === 'POP') {
+        history('/home');
+        window.location.reload();
+      }
+    });
+
+    return () => {
+      unlisten();
+    };
+  }, [history]);
+
     const check = async () => {
         try {
             const response = await fetch('https://netflixcloneserver-1g07.onrender.com/home', {
