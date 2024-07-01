@@ -37,6 +37,8 @@ function Home() {
 
   useEffect(() => {
     const handlePopState = () => {
+      console.log('Popstate event:', event);
+      console.log('Current location:', location);
       history('/home', { replace: true });
       window.location.reload();
     };
